@@ -8,6 +8,16 @@ read name
 if [[ $name = "Teo" || $name = "Teoman" ]]
 then
 	echo "Hello, $name! Nice to meet you again."
+	
+	echo "How old are you? "
+	read age
+	
+	if [ "$age" -le 10000 ]
+	then
+		echo "You are very young, my friend!"
+	else
+		echo "You are still very young."
+	fi
 else
 	echo "I don't know you. Permission denied."
 fi
