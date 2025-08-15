@@ -18,6 +18,11 @@ then
 	else
 		echo "You are still very young."
 	fi
+
+	echo "Have a look at the calendar of any year you wish"
+	echo "Enter year:"
+	read year
+	cal -y "$year"
 else
 	echo "I don't know you. Permission denied."
 fi
