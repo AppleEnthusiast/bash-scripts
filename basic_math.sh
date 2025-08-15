@@ -1,11 +1,37 @@
 #!/bin/bash
 
-echo "This program adds two numbers."
+echo "Select math operation"
+echo "(a) Add two numbers"
+echo "(b) Subtraction"
+echo "(c) Multiplikation"
+echo "(d) Division"
+read choice
+
+if [ "$choice" = "a" ]
+then
+	echo "Addition"
+fi
+
+if [ "$choice" = "b" ]
+then
+	echo "Subtraction"
+fi
+if [ "$choice" = "c" ]
+then
+	echo "Multiplikation"
+fi
+if [ "$choice" = "d" ]
+then
+	echo "Division"
+fi
+
 echo
 
-read -p "Enter first number: " num1
-read -p "Enter second number: " num2
+# read -p displays text and prompt in one line
+# read - r reads escape sequences as text
+read -r -p "Enter first number: " num1
+read -r -p "Enter second number: " num2
 
-result=$(( num1 + num2 ))
 
-echo "$num1 + $num2 = $result"
+
+
