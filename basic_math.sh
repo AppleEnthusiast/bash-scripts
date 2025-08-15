@@ -6,7 +6,8 @@ read_numbers(){
 	read -r -p "Enter second number: " num1
 }
 
-
+num1=""
+num2=""
 
 echo "Select math operation"
 echo "(a) Add two numbers"
