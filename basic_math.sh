@@ -21,6 +21,7 @@ read choice
 if [ "$choice" = "a" ]
 then
 	echo "Addition"
+	read_numbers
 fi
 
 if [ "$choice" = "b" ]
