@@ -1,5 +1,13 @@
 #!/bin/bash
 
+
+read_numbers(){
+	read -r -p "Enter first number: " num1
+	read -r -p "Enter second number: " num1
+}
+
+
+
 echo "Select math operation"
 echo "(a) Add two numbers"
 echo "(b) Subtraction"
