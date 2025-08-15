@@ -5,7 +5,7 @@ read_numbers(){
 	# read -p displays text and prompt in one line
 	# read - r reads escape sequences as text
 	read -r -p "Enter first number: " num1
-	read -r -p "Enter second number: " num1
+	read -r -p "Enter second number: " num2
 }
 
 num1=""
@@ -44,4 +44,4 @@ fi
 
 echo
 
-
+echo "Your numbers: $num1 and $num2"
