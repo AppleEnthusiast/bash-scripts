@@ -2,6 +2,8 @@
 
 
 read_numbers(){
+	# read -p displays text and prompt in one line
+	# read - r reads escape sequences as text
 	read -r -p "Enter first number: " num1
 	read -r -p "Enter second number: " num1
 }
@@ -19,8 +21,6 @@ read choice
 if [ "$choice" = "a" ]
 then
 	echo "Addition"
-	# read -p displays text and prompt in one line
-	# read - r reads escape sequences as text
 fi
 
 if [ "$choice" = "b" ]
