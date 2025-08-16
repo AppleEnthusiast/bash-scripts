@@ -2,15 +2,13 @@
 
 echo "Hello, World!"
 
-echo "What is your name? "
-read name
+read -r -p "What is your name? " name
 
 if [[ $name = "Teo" || $name = "Teoman" ]]
 then
 	echo "Hello, $name! Nice to meet you again."
 	
-	echo "How old are you? "
-	read age
+	read -r -p "How old are you? " age
 	
 	if [ "$age" -le 10000 ]
 	then
@@ -20,8 +18,7 @@ then
 	fi
 
 	echo "Have a look at the calendar of any year you wish"
-	echo "Enter year:"
-	read year
+	read -r -p "Enter year: " year
 	cal -y "$year"
 else
 	echo "I don't know you. Permission denied."
